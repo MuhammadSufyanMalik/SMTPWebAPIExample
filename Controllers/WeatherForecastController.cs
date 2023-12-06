@@ -49,7 +49,7 @@ IEmailService emailService)
                 FileName = formFile.FileName,
                 Content = formFile.FormFileToByte()
             };
-            var requestEmail = new EmailRequest(Guid.NewGuid(), "nurettinkaynar568@gmail.com", "sufyanardgrup@gmail.com", "SMTP Example", "Test from SMTP Web API Example with attachment", EmailAttachment);
+            var requestEmail = new EmailRequest(Guid.NewGuid(), "malikmsufyan@gmail.com", "sufyanardgrup@gmail.com", "SMTP Example", "Test from SMTP Web API Example with attachment", EmailAttachment);
 
 
             _emailService.SendEmail(requestEmail);
